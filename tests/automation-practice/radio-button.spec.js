@@ -54,7 +54,7 @@ test('Check that the radio button is selected', async ({ page }) => {
     await expect(button2).not.toBeChecked();
 });
 
-test.only('Only one radio button is selected after each click', async ({ page }) => {
+test('Only one radio button is selected after each click', async ({ page }) => {
     const radioButtons = page.getByRole('radio');
     // check that there are 3 radio buttons
     await expect(radioButtons).toHaveCount(3);
