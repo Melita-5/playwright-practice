@@ -26,7 +26,7 @@ test('Select Slovenia from the suggestion list', async ({ page }) => {
 });
 
 
-test.only('No suggestions for a country that does not exist', async ({ page }) => {
+test('No suggestions for a country that does not exist', async ({ page }) => {
     const placeholder = page.getByRole('textbox', { name: 'Type to Select Countries' });
 
     // first make sure the suggestion list works
