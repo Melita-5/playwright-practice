@@ -30,16 +30,7 @@ export default defineConfig({
 
   // MUST be chromium, firefox or webkit
   projects: [
-    {
-      name: 'chromium',
-      use: {
-        ...devices['Desktop Chrome'],
-        // locally use installed Google Chrome (Smart App Control blocks Playwright's unsigned Chromium);
-        // on CI (process.env.CI is set) use Playwright's own Chromium
-        channel: process.env.CI ? undefined : 'chrome',
-      },
-    },
-    //{ name: 'chromium', use: { ...devices['Desktop Chrome'] } },
+    { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
     // { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
     // { name: 'webkit', use: { ...devices['Desktop Safari'] } },
   ],

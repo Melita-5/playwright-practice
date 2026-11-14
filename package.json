@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "codegen": "playwright codegen --channel=chrome"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
