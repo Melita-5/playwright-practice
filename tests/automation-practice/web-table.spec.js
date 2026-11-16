@@ -28,7 +28,7 @@ test('has 9 rows', async ({ page }) => {
 });
 
 
-test.only('three courses in the Web Table cost 25', async ({ page }) => {
+test('three courses in the Web Table cost 25', async ({ page }) => {
     // rows of the left table (the header row has no td cells, so it is skipped)
     const rows = page.getByRole('group', { name: 'Web Table Example' })
         .locator('tbody tr').filter({ has: page.locator('td') });
