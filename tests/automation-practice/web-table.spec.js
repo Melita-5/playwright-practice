@@ -7,7 +7,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto(BASE_URL);
 });
 
-test('has 9 rows', async ({ page }) => {
+test.only('has 9 rows', async ({ page }) => {
     // rows of the right table
     const rows = page.getByRole('group', { name: 'Web Table Fixed header' }).locator('tbody').locator('tr');
     await expect(rows).toHaveCount(9);
@@ -24,7 +24,9 @@ test('has 9 rows', async ({ page }) => {
     const totalText = await page.getByText('Total Amount Collected').innerText();
 
     const expectedTotal = Number(totalText.split(':')[1]);
-    console.log("The result is: " + expect(total).toBe(expectedTotal));
+    console.log(`Total count is ${total} and expected total is ${expectedTotal}`);
+    console.log("Match is: " + (total === expectedTotal));
+    expect(total).toBe(expectedTotal);
 });
 
 
