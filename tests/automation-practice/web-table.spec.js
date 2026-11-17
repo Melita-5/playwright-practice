@@ -7,7 +7,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto(BASE_URL);
 });
 
-test.only('has 9 rows', async ({ page }) => {
+test('has 9 rows', async ({ page }) => {
     // rows of the right table
     const rows = page.getByRole('group', { name: 'Web Table Fixed header' }).locator('tbody').locator('tr');
     await expect(rows).toHaveCount(9);
