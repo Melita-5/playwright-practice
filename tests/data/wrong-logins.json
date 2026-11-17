@@ -1,0 +1,26 @@
+[
+    {
+        "name": "wrong username and password",
+        "username": "Ata Smrk",
+        "password": "ataSmrk",
+        "message": " Incorrect username/password."
+    },
+    {
+        "name": "wrong username",
+        "username": "Ata Smrk",
+        "password": "Learning@830$3mK2",
+        "message": "Incorrect username/password"
+    },
+    {
+        "name": "wrong password",
+        "username": "rahulshettyacademy",
+        "password": "ataSmrk",
+        "message": "Incorrect username/password"
+    },
+    {
+        "name": "empty fields",
+        "username": "",
+        "password": "",
+        "message": "Empty username/password"
+    }
+]
