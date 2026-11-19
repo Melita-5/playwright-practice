@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 
-test('email from the Free Access page is entered as username', async ({ page }) => {
+test('Email from the Free Access page is entered as username', async ({ page }) => {
     const linkFreeA = 'Free Access to InterviewQues/ResumeAssistance/Material';
     const userNameField = page.getByRole('textbox', { name: 'Username' });
 
@@ -36,7 +36,7 @@ test('email from the Free Access page is entered as username', async ({ page }) 
     expect(email).toBe('mentor@rahulshettyacademy.com');
 });
 
-test('domain from the Free Access page is entered as username', async ({ page }) => {
+test('Domain from the Free Access page is entered as username', async ({ page }) => {
     const linkFreeA = 'Free Access to InterviewQues/ResumeAssistance/Material';
     const userNameField = page.getByRole('textbox', { name: 'Username' });
 
