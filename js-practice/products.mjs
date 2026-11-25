@@ -50,7 +50,7 @@ console.log('List: ' + list.join(','));
 
 
 // 14a-4: the most expensive product
-console.log('---- 14a-3. The most expensive product');
+console.log('---- 14a-4. The most expensive product');
 let mostExpensive = PRODUCTS[0];
 
 for (const product of PRODUCTS) {
