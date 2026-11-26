@@ -26,3 +26,10 @@ export const SEARCHES_INSENSITIVE = [
     { term: 'ca', expectedCount: 4, names: ['Cauliflower', 'Carrot', 'Capsicum', 'Cashews'] },
     { term: 'CA', expectedCount: 4, names: ['Cauliflower', 'Carrot', 'Capsicum', 'Cashews'] }
 ]
+
+// for cart test
+export const CART = [
+    { name: 'Tomato', expectedCards: 1, addedItems: 1, price: 16, sum: 16 },
+    { name: 'Carrot', expectedCards: 1, addedItems: 2, price: 56, sum: 72 },
+    { name: 'Beans', expectedCards: 1, addedItems: 3, price: 82, sum: 154 }
+];
