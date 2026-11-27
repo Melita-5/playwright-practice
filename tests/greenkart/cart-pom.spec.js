@@ -102,7 +102,7 @@ test('Adding products with one method gives the expected header price', async ({
 });
 
 // 15e: add several pieces of one product (quantity) and check the header
-test.only('Adding 3 pieces of one product gives the expected price', async ({ page }) => {
+test('Adding 3 pieces of one product gives the expected price', async ({ page }) => {
     const greenKart = new GreenKartPage(page);
 
     const productName = QUANTITY_ORDER[0].name;
