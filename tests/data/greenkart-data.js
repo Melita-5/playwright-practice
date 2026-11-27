@@ -33,3 +33,8 @@ export const CART = [
     { name: 'Carrot', expectedCards: 1, addedItems: 2, price: 56, sum: 72 },
     { name: 'Beans', expectedCards: 1, addedItems: 3, price: 82, sum: 154 }
 ];
+
+export const QUANTITY_ORDER = [
+    { name: 'Tomato', quantity: 3, cards: 1, addedItems: 1, price: 16, sum: 48 },
+]
+

@@ -282,6 +282,7 @@ test('Tomato has the expected price', async ({ page }) => {
     const products = productsList.filter({ visible: true });
     await expect(products).toHaveCount(count);
     const names = await products.locator('h4.product-name').allTextContents();
+
     // prices only from the found products, not from the whole page
     const priceTexts = await products.locator('p.product-price').allTextContents();
     console.log(`If searching with '${term}' you get '${count}' of the following products: ${names} with ${priceTexts}.`);
